@@ -1,3 +1,4 @@
+
 $(window).load(function(){
 	$('.loading').fadeOut('fast');
 	$('.container').fadeIn('fast');
@@ -24,6 +25,7 @@ $('document').ready(function(){
 		$('#bulb_pink').addClass('bulb-glow-pink');
 		$('#bulb_orange').addClass('bulb-glow-orange');
 		$('body').addClass('peach');
+        $('#love').fadeOut('slow');
 		$(this).fadeOut('slow').delay(5000).promise().done(function(){
 			$('#play').fadeIn('slow');
 		});
@@ -168,6 +170,7 @@ $('document').ready(function(){
 		$(this).fadeOut('slow');
 		$('.cake').fadeOut('fast').promise().done(function(){
 			$('.message').fadeIn('slow');
+            console.log("lll");
 		});
 		
 		var i;
@@ -178,11 +181,16 @@ $('document').ready(function(){
 			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
 			if(i==50){
 				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
-					$('.cake').fadeIn('fast');
+					$('.cake').fadeIn('fast').promise().done(function(){
+                        $('#fire').fadeIn(800);
+                    });
 				});
+//                $('#fire').fadeIn(800);
+                console.log("fff");
 				
 			}
 			else{
+                
 				msgLoop(i);
 			}			
 
@@ -191,8 +199,24 @@ $('document').ready(function(){
 		}
 		
 		msgLoop(0);
+        
 		
 	});
+    
+    
+//    $("#fire").on('click',function(){
+//        
+////         $('#sec1').addClass("fireworks");
+////            $('#sec2,#sec3,#sec4,#sec5,#sec6').addClass("content")
+//            $('.fireworks').fireworks({ 
+//		  sound: true, // sound effect
+//		  opacity: 0.9, 
+//		  width: '100%', 
+//		  height: '100%' 
+//		});
+//        
+////        window.location.href="..\FireWork\index.html"
+//    });
 });
 
 
