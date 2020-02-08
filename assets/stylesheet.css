@@ -220,6 +220,24 @@ html{
     }
 
 
+#line::before{
+  content:"";
+  position:absolute;
+  left:-200px;
+  top:100px;
+  width:800px;
+  height:5px;
+  box-sizing:border-box;
+  border-bottom:5px solid deeppink;
+  transform-origin:bottom center;
+  transform:rotateZ(22deg) scale(1.38);
+/*  // transform:rotateZ(45deg) scale(1.414);*/
+  animation:slash 5s infinite ease;
+}
+
+
+
+
 
 
 .peach {
@@ -1508,8 +1526,9 @@ audio {
         text-transform: uppercase;
         font-family: 'Signika', sans-serif;
         font-weight: 700;
-        color: #fff;
-        background-color: #466baf;
+        color: darkred;
+          background-color: skyblue;
+/*        background-color: #466baf;*/
 /*        background-color: transparent;*/
 }
     
@@ -1530,7 +1549,7 @@ audio {
     .open .dropdown-toggle.btn-primary {
         border-color: #fff;
         color: #fff;
-        background-color: #466baf;
+        background-color: skyblue;
     }
 
 
