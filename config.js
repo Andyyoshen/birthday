@@ -41,7 +41,7 @@ var config = {
      * Tip: 图片最好用正方形or接近正方形, 看起来效果更好
      */
     imgs: {
-        "心愛的思思": "./imgs/xiaokeai.png",
+        "心愛的思思": "./imgs/zuzu1.jpg",
         "最最最最最愛妳了鼻鼻~~":"birthday/imgs/iandyou.jpg",
         // "今天是你的生日": "./imgs/birthday.jpg",
     },
