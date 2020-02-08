@@ -41,8 +41,8 @@ var config = {
      * Tip: 图片最好用正方形or接近正方形, 看起来效果更好
      */
     imgs: {
-        "心愛的思思": "./imgs/zuzu1.jpg",
-        "最最最最最愛妳了鼻鼻~~":"./imgs/iandyou.jpg",
+        "心愛的思思": "birthday/imgs/zuzu1.jpg",
+        "最最最最最愛妳了鼻鼻~~":"birthday/imgs/iandyou.jpg",
         // "今天是你的生日": "./imgs/birthday.jpg",
     },
     // 按钮文字描述, 以下是默认的按钮文字，英文的，您可以改成你喜欢的文字
